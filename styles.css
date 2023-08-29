@@ -1,0 +1,97 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #131212;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 500px;
+  background-color: #363636;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 10px;
+  background-color: #464646;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.refresh-button,
+.download-button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: none; /* Initially hidden */
+}
+
+.generate-button {
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.generate-button:hover {
+  background-color: #0056b3;
+}
+
+.refresh-button {
+  background-color: #dc3545;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.refresh-button:hover {
+  background-color: #c82333;
+}
+
+.download-button {
+  background-color: #28a745;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.download-button:hover {
+  background-color: #218838;
+}
+
+.qr-code {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+/* Center QR code in container */
+.qr-code canvas {
+  display: inline-block;
+  vertical-align: middle;
+  width: 200px;
+  height: 200px;
+}
